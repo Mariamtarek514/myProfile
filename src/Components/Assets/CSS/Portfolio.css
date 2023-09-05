@@ -1,0 +1,110 @@
+.portfolio {
+    background: linear-gradient(to right, #f3e5ec, #e9eff6);
+    background: #fff6fa;
+    background: linear-gradient(to right, var(--gradient-2), var(--gradient-1));
+}
+.portfolio .row .box {
+    background-color: #fff;
+    text-align: left;
+}
+.portfolio .portfolio_content {
+    min-height: 330px;
+}
+.portfolio .row figure {
+    border-top-right-radius: 16px;
+    border-bottom-right-radius: 16px;
+    min-height: 200px;
+}
+
+.portfolio .row .box-1 {
+    background: url("../images/portfolio_1.jpg");
+    background-size: cover;
+    background-position: top;
+    transition: background-position 3s linear;
+    -webkit-transition: background-position 3s linear;
+    -moz-transition: background-position 3s linear;
+    -ms-transition: background-position 3s linear;
+    -o-transition: background-position 3s linear;
+}
+.portfolio .row .box-2 {
+    background: url("../images/portfolio_2.jpg");
+    background-size: cover;
+    background-position: center;
+}
+.portfolio .row .box-3 {
+    background: url("../images/portfolio_3.jpg");
+    background-size: cover;
+    background-position: center;
+}
+.portfolio .row .box-4 {
+    background: url("../images/portfolio_4.jpg");
+    background-size: cover;
+    background-position: top;
+    transition: background-position 3s linear;
+    -webkit-transition: background-position 3s linear;
+    -moz-transition: background-position 3s linear;
+    -ms-transition: background-position 3s linear;
+    -o-transition: background-position 3s linear;
+}
+.portfolio .row .box-5 {
+    background: url("../images/portfolio_5.jpg");
+    background-size: cover;
+    background-position: top;
+    transition: background-position 3s linear;
+    -webkit-transition: background-position 3s linear;
+    -moz-transition: background-position 3s linear;
+    -ms-transition: background-position 3s linear;
+    -o-transition: background-position 3s linear;
+}
+.portfolio .row .box-6 {
+    background: url("../images/portfolio_6.jpg");
+    background-size: cover;
+    background-position: top;
+    transition: background-position 3s linear;
+    -webkit-transition: background-position 3s linear;
+    -moz-transition: background-position 3s linear;
+    -ms-transition: background-position 3s linear;
+    -o-transition: background-position 3s linear;
+}
+.portfolio .row .box-7 {
+    background: url("../images/portfolio_7.jpg");
+    background-size: cover;
+    background-position: top;
+    transition: background-position 3s linear;
+    -webkit-transition: background-position 3s linear;
+    -moz-transition: background-position 3s linear;
+    -ms-transition: background-position 3s linear;
+    -o-transition: background-position 3s linear;
+}
+.portfolio .row .box-8 {
+    background: url("../images/portfolio_8.jpg");
+    background-size: cover;
+    background-position: center;
+}
+.portfolio .row .box-1:hover,
+.portfolio .row .box-4:hover,
+.portfolio .row .box-5:hover,
+.portfolio .row .box-6:hover,
+.portfolio .row .box-7:hover {
+    background-position: bottom;
+}
+.portfolio .box a {
+    text-decoration: none;
+    border: 2px solid;
+    border-image-slice: 5;
+    border-image-source: linear-gradient(
+        to right,
+        var(--gradient-2),
+        var(--gradient-1)
+    );
+    color: var(--gradient-1);
+    padding: 5px 25px;
+}
+
+/* responsive */
+@media screen and (max-width: 767.9px) {
+    .portfolio .row figure {
+        border-bottom-right-radius: 0;
+        border-top-left-radius: 16px;
+    }
+}

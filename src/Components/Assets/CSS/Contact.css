@@ -1,0 +1,10 @@
+.contact {
+    background: linear-gradient(to right, var(--gradient-2), var(--gradient-1));
+}
+.contact .social {
+    gap: 20px;
+}
+.contact .social i,
+.contact p {
+    color: #fff;
+}

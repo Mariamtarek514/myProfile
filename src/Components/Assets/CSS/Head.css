@@ -1,0 +1,30 @@
+.special_heading {
+    color: #fff;
+}
+.special_heading.dark {
+    color: var(--black);
+}
+.special_heading::after,
+.special_heading::before {
+    content: "";
+    position: absolute;
+    height: 2.4px;
+    left: 50%;
+    transform: translatex(-50%);
+    -webkit-transform: translatex(-50%);
+    -moz-transform: translatex(-50%);
+    -ms-transform: translatex(-50%);
+    -o-transform: translatex(-50%);
+    bottom: -14px;
+}
+.special_heading::before {
+    width: 150px;
+    background-color: #d9d7d7;
+}
+.special_heading::after {
+    background-color: #fff;
+    width: 50px;
+}
+.special_heading.dark::after {
+    background-color: var(--black);
+}

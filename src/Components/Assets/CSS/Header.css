@@ -1,0 +1,73 @@
+header {
+    min-height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+header .content {
+    text-align: left;
+}
+
+header .content h1 {
+    color: rgb(4 4 4 / 70%);
+    font-size: 25px;
+    width: 500px;
+    max-width: 100%;
+    line-height: 1.5;
+}
+header .social {
+    gap: 15px;
+}
+header .social i {
+    background: -webkit-linear-gradient(
+        left,
+        var(--gradient-1),
+        var(--gradient-2)
+    );
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+header .content .button {
+    gap: 20px;
+}
+header .content .button button,
+header .content .button a {
+    width: 150px;
+    background-color: transparent;
+    padding: 7px 25px;
+}
+header .content .button a {
+    text-decoration: none;
+    border: 2px solid;
+    border-image-slice: 5;
+    border-image-source: linear-gradient(
+        to right,
+        var(--gradient-2),
+        var(--gradient-1)
+    );
+    color: var(--gradient-1);
+}
+header .content .button .button_colored {
+    color: #fff;
+    background: linear-gradient(to right, var(--gradient-2), var(--gradient-1));
+}
+/* responsive */
+@media screen and (max-width: 767.9px) {
+    header .content {
+        text-align: center;
+    }
+    header figure img {
+        width: 87%;
+    }
+}
+@media screen and (max-width: 400px) {
+    header .button {
+        flex-direction: column;
+        width: 90%;
+    }
+    header .content .button button,
+    header .content .button a {
+        width: 100%;
+    }
+}
