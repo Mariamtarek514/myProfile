@@ -1,7 +1,5 @@
 /* start skills section */
-.skills {
-    min-height: 70vh;
-}
+
 .skills .row {
     gap: 50px;
     justify-content: center;
